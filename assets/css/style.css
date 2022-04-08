@@ -1,0 +1,82 @@
+* {
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    scroll-behavior: smooth;
+    text-decoration: none !important;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.section {
+    margin-top: 50px;
+}
+.section-heading {
+    margin-bottom: 100px;
+}
+
+.landing-image {
+    margin: 0px 50px 0px 50px;
+    width: 50vw;
+}
+
+.map-container > iframe {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.custom-shadow {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.this-product {
+    max-width: 1000px;
+    margin: 50px auto auto auto;
+}
+
+.cart,
+.order {
+    max-width: 1000px;
+    max-height: 480px;
+    margin: auto;
+    overflow-y: scroll;
+}
+
+.queries {
+    max-height: 480px;
+    margin: auto;
+    overflow-y: scroll;
+}
+
+.account {
+    max-width: 600px;
+    margin: auto;
+}
+
+.checkout,
+.admin {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.manage {
+    max-width: 600px;
+    margin: 25px auto auto auto;
+}
+
+.disabled {
+    pointer-events: none;
+    cursor: unset;
+}
+
+.footer-item > a > i {
+    font-size: 40px;
+    color: white;
+    padding: 0px 30px 0px 30px;
+    border-radius: 50%;
+}
+
+.footer-item > h6 {
+    color: white;
+}
