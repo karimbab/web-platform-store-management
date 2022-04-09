@@ -1,3 +1,4 @@
+<!-- Home Page -->
 <?php
 include("./apis/config.php");
 $category = $_SESSION["category"];
@@ -84,7 +85,6 @@ $category = $_SESSION["category"];
         </div>
 
         <?php include("./includes/contact.php"); ?>
-        <?php include("./includes/footer.php"); ?>
 </body>
 
 </html>

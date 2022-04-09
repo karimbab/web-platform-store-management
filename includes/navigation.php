@@ -1,3 +1,4 @@
+<!-- Navigation Section -->
 <nav class="navbar navbar-expand-md bg-white">
     <p class="navbar-brand">Store Management</p>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -8,38 +9,55 @@
             <?php
             $category = $_SESSION['category'];
 
-            echo "
-                <li class='nav-item'>
-                    <a class='nav-link' href='admin.php'>Home</a>
-                </li>
-                <li class='nav-item'>
-                    <a class='nav-link' href='dashboard.php'>Dashboard</a>
-                </li>
-                <li class='nav-item'>
-                    <a class='nav-link' href='shop.php?query=manage'>Shop</a>
-                </li>
-                <li class='nav-item'>
-                    <a class='nav-link' href='products.php'>Products</a>
-                </li>
-                <li class='nav-item'>
-                    <a class='nav-link' href='trending.php'>Trending</a>
-                </li>
-                <li class='nav-item'>
-                    <a class='nav-link' href='cart.php'>Cart</a>
-                </li>
-                <li class='nav-item'>
-                    <a class='nav-link' href='orders.php'>Orders</a>
-                </li>
-                <li class='nav-item'>
-                    <a class='nav-link' href='profile.php'>Profile</a>
-                </li>
-                <li class='nav-item'>
-                    <a class='nav-link' href='signup.php'>Register</a>
-                </li>
-                <li class='nav-item'>
-                    <a class='nav-link' href='logout.php'>Logout</a>
-                </li>
-            ";
+            if ($category == "guest") {
+                echo "
+                    <li class='nav-item'>
+                        <a class='nav-link' href='../index.php'>Home</a>
+                    </li>
+                    <li class='nav-item'>
+                        <a class='nav-link' href='../products.php'>Our Products</a>
+                    </li>
+                    <li class='nav-item'>
+                        <a class='nav-link' href='../login.php'>Login</a>
+                    </li>
+                    <li class='nav-item'>
+                        <a class='nav-link' href='../signup.php'>Register</a>
+                    </li>
+                ";
+            }
+
+            // echo "
+            //     <li class='nav-item'>
+            //         <a class='nav-link' href='admin.php'>Home</a>
+            //     </li>
+            //     <li class='nav-item'>
+            //         <a class='nav-link' href='dashboard.php'>Dashboard</a>
+            //     </li>
+            //     <li class='nav-item'>
+            //         <a class='nav-link' href='shop.php?query=manage'>Shop</a>
+            //     </li>
+            //     <li class='nav-item'>
+            //         <a class='nav-link' href='products.php'>Products</a>
+            //     </li>
+            //     <li class='nav-item'>
+            //         <a class='nav-link' href='trending.php'>Trending</a>
+            //     </li>
+            //     <li class='nav-item'>
+            //         <a class='nav-link' href='cart.php'>Cart</a>
+            //     </li>
+            //     <li class='nav-item'>
+            //         <a class='nav-link' href='orders.php'>Orders</a>
+            //     </li>
+            //     <li class='nav-item'>
+            //         <a class='nav-link' href='profile.php'>Profile</a>
+            //     </li>
+            //     <li class='nav-item'>
+            //         <a class='nav-link' href='signup.php'>Register</a>
+            //     </li>
+            //     <li class='nav-item'>
+            //         <a class='nav-link' href='logout.php'>Logout</a>
+            //     </li>
+            // ";
             ?>
         </ul>
     </div>
