@@ -42,7 +42,7 @@ if (isset($_POST["login"])) {
             $response = mysqli_query($conn, $verify_admin);
             if (mysqli_num_rows($response)) {
                 $_SESSION["category"] = "admin";
-                // header('Location: ../admin.php');
+                header('Location: ../admin.php');
             } else {
                 echo "Password was incorrect, please reach to database administrator for password recovery.";
             }

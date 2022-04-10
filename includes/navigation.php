@@ -52,7 +52,7 @@
                         <a class='nav-link' href='../index.php'>Home</a>
                     </li>
                     <li class='nav-item'>
-                        <a class='nav-link' href='#!'>Dashboard</a>
+                        <a class='nav-link' href='../dashboard.php'>Dashboard</a>
                     </li>
                     <li class='nav-item'>
                         <a class='nav-link' href='../shop.php?query=Manage'>Shop</a>
@@ -67,7 +67,10 @@
             } else if ($_SESSION['category'] == "admin") {
                 echo "
                     <li class='nav-item'>
-                        <a class='nav-link' href='#!'>Admin</a>
+                        <a class='nav-link' href='../admin.php'>Admin</a>
+                    </li>
+                    <li class='nav-item'>
+                        <a class='nav-link' href='../logout.php'>Logout</a>
                     </li>
                 ";
             } else {
