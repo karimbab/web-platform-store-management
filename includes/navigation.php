@@ -31,16 +31,16 @@
                         <a class='nav-link' href='../products.php'>Products</a>
                     </li>
                     <li class='nav-item'>
-                        <a class='nav-link' href='#!'>Trending Today</a>
+                        <a class='nav-link' href='../trending.php'>Trending Today</a>
                     </li>
                     <li class='nav-item'>
-                        <a class='nav-link' href='#!'>Cart</a>
+                        <a class='nav-link' href='../cart.php'>Cart</a>
                     </li>
                     <li class='nav-item'>
-                        <a class='nav-link' href='#!'>Orders</a>
+                        <a class='nav-link' href='../orders.php'>Orders</a>
                     </li>
                     <li class='nav-item'>
-                        <a class='nav-link' href='#!'>Profile</a>
+                        <a class='nav-link' href='../profile.php'>Profile</a>
                     </li>
                     <li class='nav-item'>
                         <a class='nav-link' href='../logout.php'>Logout</a>
@@ -49,13 +49,16 @@
             } else if ($_SESSION['category'] == "seller") {
                 echo "
                     <li class='nav-item'>
-                        <a class='nav-link' href='#!'>Home</a>
+                        <a class='nav-link' href='../index.php'>Home</a>
                     </li>
                     <li class='nav-item'>
                         <a class='nav-link' href='#!'>Dashboard</a>
                     </li>
                     <li class='nav-item'>
-                        <a class='nav-link' href='#!'>Shop</a>
+                        <a class='nav-link' href='../shop.php?query=Manage'>Shop</a>
+                    </li>
+                    <li class='nav-item'>
+                        <a class='nav-link' href='../profile.php'>Profile</a>
                     </li>
                     <li class='nav-item'>
                         <a class='nav-link' href='../logout.php'>Logout</a>
