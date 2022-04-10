@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SignUp | ICT Commercial</title>
+    <title>Register Yourself @ The Store</title>
     <?php include "./includes/core-styles.html"; ?>
 </head>
 
@@ -17,7 +17,7 @@
         <div class="card account custom-shadow p-2">
             <h3 class="text-center">Let's Create Your Account</h3>
             <hr>
-            <form class="card-body" method="POST" action="./api/account-api.php">
+            <form class="card-body" method="POST" action="./apis/account-daemon.php">
                 <div class="form-group">
                     <label for="name">Name:</label>
                     <input type="text" class="form-control" name="name" placeholder="what do we call you." required>

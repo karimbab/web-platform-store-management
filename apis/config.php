@@ -4,7 +4,9 @@ if ($conn) {
     if (session_status() == PHP_SESSION_NONE) {
         session_start();
         $_SESSION["login"] = false;
-        $_SESSION["category"] = "guest";
+    }
+    if (!isset($_SESSION["category"])) {
+        $_SESSION["name"] = $_SESSION["category"] = "guest";
     }
 } else {
     echo "There was some problem connecting to organization database, report here at info@org.com ...";

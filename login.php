@@ -17,7 +17,7 @@
         <div class="card account custom-shadow p-2 mt-5">
             <h3 class="text-center">Get Back to Shop</h3>
             <hr>
-            <form class="card-body" method="POST" action="./api/account-api.php">
+            <form class="card-body" method="POST" action="./apis/account-daemon.php">
                 <div class="form-group">
                     <label for="email">Email:</label>
                     <input type="email" class="form-control" name="email" placeholder="Enter email provided during signup." required>
