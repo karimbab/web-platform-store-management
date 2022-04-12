@@ -77,7 +77,7 @@ include('./apis/config.php');
                             </div>
                             <div class='col-md-4 my-auto'>
                                 <a href='#!' class='btn btn-outline-primary w-100 mb-2'>TRACK</a>
-                                <a href='./api/remove_order.php?cid=$cid&pid=$pid&sid=$sid' class='btn btn-outline-danger w-100 mt-2'>CANCEL</a>
+                                <a href='./apis/customer-daemon.php?subject=order&query=remove&cid=$cid&pid=$pid&sid=$sid' class='btn btn-outline-danger w-100 mt-2'>CANCEL</a>
                             </div>
                         </div>
                         <hr>

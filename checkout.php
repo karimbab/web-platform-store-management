@@ -128,7 +128,7 @@ include('./apis/config.php');
                     echo showBillingDetails($userName, $userEmail, $userPhone, $userAddress, $subtotal);
 
                     echo "
-                            <a href='./apis/set-order.php?flag=1&incart=1' class='btn btn-success ml-2 w-50'>ORDER</a>
+                            <a href='./apis/customer-daemon.php?subject=order&query=set&flag=1&incart=1' class='btn btn-success ml-2 w-50'>ORDER</a>
                         </div>
                     ";
                 }
@@ -196,11 +196,11 @@ include('./apis/config.php');
 
                     echo showBillingDetails($userName, $userEmail, $userPhone, $userAddress, $subtotal);
                     echo "
-                        <a href='./api/set_order.php?flag=0&incart=1&pid=$pid&sid=$sid' class='btn btn-success ml-2 w-50'>ORDER</a>
+                        <a href='./apis/customer-daemon.php?subject=order&query=set&flag=0&incart=1&pid=$pid&sid=$sid' class='btn btn-success ml-2 w-50'>ORDER</a>
                     ";
                 } else {
                     echo "
-                        <form action = './api/set_order.php?flag=0&incart=0&pid=$pid&sid=$sid' method = 'POST'>
+                        <form action = './apis/customer-daemon.php?subject=order&query=set&flag=0&incart=0&pid=$pid&sid=$sid' method = 'POST'>
                             <div class='row mt-4'>
                                 <div class='col'>$product_name</div>
                                 <div class='col'>$selected_color</div>
