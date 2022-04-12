@@ -1,7 +1,5 @@
-<?php
-include('./apis/config.php');
-$category = $_SESSION["category"];
-?>
+<!-- Profile Page -->
+<?php include('./apis/config.php'); ?>
 <!DOCTYPE html>
 <html lang='en'>
 
@@ -18,11 +16,11 @@ $category = $_SESSION["category"];
     <div class="container-fluid">
         <?php include('./includes/navigation.php') ?>
         <?php
-        if ($category == "customer" || $category == "seller") {
+        if ($_SESSION["category"] == "customer" || $_SESSION["category"] == "seller") {
             $uid = $_SESSION['uid'];
             echo "
                 <div class='card account custom-shadow p-2'>
-                    <h3 class='text-center'>Your Profile</h3> 
+                    <h3 class='text-center'>Edit Profile</h3> 
                     <hr>
                     <form class='card-body' method='POST' action='./apis/account-daemon.php'>
             ";
@@ -34,21 +32,21 @@ $category = $_SESSION["category"];
             $user_name = ucwords($user_profile[0]);
             $gender_select = "<select class='form-control' name='gender' required>";
             if ($user_profile[4] == "male") {
-                $gender_select .= "<option selected>male</option>";
+                $gender_select .= "<option value='male' selected>Male</option>";
             } else {
-                $gender_select .= "<option>male</option>";
+                $gender_select .= "<option value='female'>Male</option>";
             }
 
             if ($user_profile[4] == "female") {
-                $gender_select .= "<option selected>female</option>";
+                $gender_select .= "<option value='female' selected>Female</option>";
             } else {
-                $gender_select .= "<option>female</option>";
+                $gender_select .= "<option value='female'>Female</option>";
             }
 
             if ($user_profile[4] == "other") {
-                $gender_select .= "<option selected>other</option>";
+                $gender_select .= "<option value='other' selected>Other</option>";
             } else {
-                $gender_select .= "<option>other</option>";
+                $gender_select .= "<option value='other'>Other</option>";
             }
             $gender_select .= "</select>";
 

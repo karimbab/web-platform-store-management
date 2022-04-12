@@ -19,14 +19,13 @@
                         </address>
                     </div>
                     <div class="col">
-                        <i class="fas fa-mobile-alt"></i> +91 8002046457 <br>
-                        <i class="fas fa-envelope"></i><a href="mailto:info.admin@gmail.com?subject=query"> info.admin@gmail.com</a>
+                        <i class="fas fa-mobile-alt"></i> &nbsp; +91 8002046457 <br>
+                        <i class="fas fa-envelope"> &nbsp; </i><a href="mailto:admin@gmail.com?subject=Hello">admin@gmail.com</a>
                     </div>
                 </div>
-                <form action="../apis/contact-api.php" method="post" class="pr-4">
+                <form action="../apis/account-daemon.php" method="post" class="pr-4">
                     <?php
-                    $category = $_SESSION['category'];
-                    if ($category == 'customer' || $category == 'seller') {
+                    if ($_SESSION['category'] == 'customer' || $_SESSION['category'] == 'seller') {
                         $uid = $_SESSION['uid'];
                         $read_user_details = "SELECT * FROM users WHERE uid ='$uid' ";
                         $response = mysqli_query($conn, $read_user_details) or die(mysqli_error($conn));
@@ -46,18 +45,18 @@
                         echo "
                             <div class='form-group'>
                                 <label for='name'>Name:</label>
-                                <input type='text' class='form-control' name='name' placeholder='Enter name' required>
+                                <input type='text' class='form-control' name='name' placeholder='Enter your name here...' required>
                             </div>
                             <div class='form-group'>
                                 <label for='email'>Email:</label>
-                                <input type='email' class='form-control' name='email' placeholder='Enter email' required>
+                                <input type='email' class='form-control' name='email' placeholder='Enter email here...' required>
                             </div>
                         ";
                     }
                     ?>
                     <div class='form-group'>
                         <label for='message'>Message:</label>
-                        <textarea type='text' class='form-control' name='message' cols='30' rows='8' max='250' placeholder='Detailed query' required></textarea>
+                        <textarea type='text' class='form-control' name='message' cols='30' rows='8' max='250' placeholder='Please provide a detailed query' required></textarea>
                     </div>
                     <div class="text-center">
                         <button type="submit" name="contact" class="btn btn-outline-info w-50">SEND</button>
