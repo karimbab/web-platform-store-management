@@ -1,4 +1,4 @@
-<form class='card-body' action='./apis/shop.php' method='POST'>
+<form class='card-body' action='./apis/seller-daemon.php' method='POST'>
     <div class='row'>
         <div class='col'>
             <div class='form-group'>

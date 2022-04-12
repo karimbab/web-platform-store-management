@@ -9,7 +9,7 @@ include('./apis/config.php');
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shop | ICT Commercial</title>
+    <title>Shop | Mart</title>
     <?php include("./includes/core-styles.html"); ?>
 </head>
 
@@ -31,7 +31,7 @@ include('./apis/config.php');
 
             if ($requested_query == "Manage") {
                 echo "
-                    <form class='row card-body' action='./apis/shop.php' method='POST'>
+                    <form class='row card-body' action='./apis/seller-daemon.php' method='POST'>
                         <div class='col-md-6'>
                             <select name='query' class='form-control' required>
                                 <option value='add'>Add new product</option>
@@ -46,13 +46,13 @@ include('./apis/config.php');
                 ";
             } else {
                 if ($requested_query == "Add") {
-                    include('./seller_add_product.php');
+                    include('./add-product.php');
                 }
                 if ($requested_query == "Delete") {
-                    include('./seller_delete_product.php');
+                    include('./delete-product.php');
                 }
                 if ($requested_query == "Update") {
-                    include('./seller_update_product.php');
+                    include('./update-product.php');
                 }
             }
             echo "
@@ -68,7 +68,7 @@ include('./apis/config.php');
     function request_edit_access() {
         let product_id = document.getElementById('selected_product').value;
         let request_edit_access_btn = document.getElementById('request_edit_access_btn');
-        request_edit_access_btn.setAttribute('href', `./shop.php?query=update&edit_access=1&pid=${product_id}`);
+        request_edit_access_btn.setAttribute('href', `./seller-shop.php?query=update&edit_access=1&pid=${product_id}`);
     }
 </script>
 

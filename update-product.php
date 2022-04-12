@@ -52,7 +52,7 @@ if (mysqli_num_rows($response) > 0) {
 
         $product_name = ucwords($product_details[1]);
         echo "
-            <form class='card-body' action='./apis/shop.php' method='POST'>
+            <form class='card-body' action='./apis/seller-daemon.php' method='POST'>
                 <input type='hidden' class='form-control' name='pid' value='$pid'>
                 <div class='row'>
                     <div class='col'>
@@ -63,7 +63,7 @@ if (mysqli_num_rows($response) > 0) {
                     </div>
                     <div class='col'>
                         <div class='form-group'>
-                            <label for='color'>Colors:</label>
+                            <label for='color'>Colors:</label>b
                             <input type='text' class='form-control' name='color' value='$colors_field' required>
                         </div>
                     </div>

@@ -52,10 +52,10 @@
                         <a class='nav-link' href='../index.php'>Home</a>
                     </li>
                     <li class='nav-item'>
-                        <a class='nav-link' href='../dashboard.php'>Dashboard</a>
+                        <a class='nav-link' href='../seller-dashboard.php'>Dashboard</a>
                     </li>
                     <li class='nav-item'>
-                        <a class='nav-link' href='../shop.php?query=Manage'>Shop</a>
+                        <a class='nav-link' href='../seller-shop.php?query=manage'>Shop</a>
                     </li>
                     <li class='nav-item'>
                         <a class='nav-link' href='../profile.php'>Profile</a>

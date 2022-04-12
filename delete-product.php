@@ -7,7 +7,7 @@ $seller_products = mysqli_fetch_all($response, MYSQLI_ASSOC);
 
 if (mysqli_num_rows($response) > 0) {
     echo "
-        <form class='row card-body' action='./apis/shop.php' method='POST'>
+        <form class='row card-body' action='./apis/seller-daemon.php' method='POST'>
             <div class='col-md-6'>
                 <select name='pid' class='form-control' required>
     ";
