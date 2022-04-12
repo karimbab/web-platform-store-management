@@ -52,7 +52,7 @@ if (mysqli_num_rows($response) > 0) {
 
         $product_name = ucwords($product_details[1]);
         echo "
-            <form class='card-body' action='./api/shop.php' method='POST'>
+            <form class='card-body' action='./apis/shop.php' method='POST'>
                 <input type='hidden' class='form-control' name='pid' value='$pid'>
                 <div class='row'>
                     <div class='col'>

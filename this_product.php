@@ -82,15 +82,15 @@ if ($category == 'customer') {
                 if ($incart == 0) {
                     echo "
                         <div class='text-center d-flex flex-row mt-2'>
-                            <a href='./api/update-cart.php?query=add&pid=$pid&sid=$sid' class='btn btn-info mr-2 w-50'>ADD</a> 
-                            <a href='./api/update-cart.php?query=remove&pid=$pid&sid=$sid' class='btn btn-secondary w-50 disabled'>REMOVE</a>
+                            <a href='./apis/update-cart.php?query=add&pid=$pid&sid=$sid' class='btn btn-info mr-2 w-50'>ADD</a> 
+                            <a href='./apis/update-cart.php?query=remove&pid=$pid&sid=$sid' class='btn btn-secondary w-50 disabled'>REMOVE</a>
                         </div>
                     ";
                 } else {
                     echo "
                         <div class='d-flex flex-row mt-2'>  
                             <a href='cart.php' class='btn btn-info mr-2 w-50'>GO TO CART</a> 
-                            <a href='./api/update-cart.php?query=remove&pid=$pid&sid=$sid' class='btn btn-secondary w-50'>REMOVE</a>
+                            <a href='./apis/update-cart.php?query=remove&pid=$pid&sid=$sid' class='btn btn-secondary w-50'>REMOVE</a>
                         </div>
                     ";
                 }

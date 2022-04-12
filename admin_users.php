@@ -11,7 +11,7 @@ if (mysqli_num_rows($response)) {
                 <h6>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam, beatae.</h6>
             </div>
             <hr>
-            <form class='row card-body' action='./api/admin-manage.php' method='POST'>
+            <form class='row card-body' action='./apis/admin-manage.php' method='POST'>
                 <div class='col-md-6'>
                     <select name='seller_id' class='form-control' required>
     ";

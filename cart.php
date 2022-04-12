@@ -30,7 +30,7 @@ include('./apis/config.php');
                         <h2>My Cart</h2>
                         <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, itaque.</h6>
                     </div>
-                    <form action='./api/update-cart.php?query=update' method='POST'>
+                    <form action='./apis/update-cart.php?query=update' method='POST'>
                         <div class='cart custom-shadow text-center p-3 mb-4'>
                 ";
 
@@ -99,7 +99,7 @@ include('./apis/config.php');
                     }
                     echo "
 
-                                <a href='./api/update-cart.php?query=remove&pid=$pid&sid=$sid' class='btn btn-outline-danger w-100 mt-2'>REMOVE</a>
+                                <a href='./apis/update-cart.php?query=remove&pid=$pid&sid=$sid' class='btn btn-outline-danger w-100 mt-2'>REMOVE</a>
                             </div>
                         </div>
                         <hr>

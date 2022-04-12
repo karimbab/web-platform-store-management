@@ -23,10 +23,10 @@ include('./apis/config.php');
              * fetch billing address
              */
             $cid = $_SESSION["uid"];
-            $userName = ucwords($_SESSION['user_name']);
-            $userEmail = $_SESSION['user_email'];
-            $userPhone = $_SESSION['user_phone'];
-            $userAddress = $_SESSION['user_address'];
+            $userName = ucwords($_SESSION['name']);
+            $userEmail = $_SESSION['email'];
+            $userPhone = $_SESSION['phone'];
+            $userAddress = $_SESSION['address'];
 
             $flag = $_GET['flag'];
             $incart = $_GET['incart'];
@@ -128,7 +128,7 @@ include('./apis/config.php');
                     echo showBillingDetails($userName, $userEmail, $userPhone, $userAddress, $subtotal);
 
                     echo "
-                            <a href='./api/set_order.php?flag=1&incart=1' class='btn btn-success ml-2 w-50'>ORDER</a>
+                            <a href='./apis/set-order.php?flag=1&incart=1' class='btn btn-success ml-2 w-50'>ORDER</a>
                         </div>
                     ";
                 }

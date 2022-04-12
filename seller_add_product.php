@@ -25,7 +25,7 @@
                 <label for='category'>Category:</label>
                 <select class='form-control' name='category_id' required>
                     <?php
-                    include('./api/config.php');
+                    include('./apis/config.php');
                     $read_product_categories = "SELECT * FROM product_categories ";
                     $response = mysqli_query($conn, $read_product_categories) or die(mysqli_error($conn));
                     $available_categories = mysqli_fetch_all($response, MYSQLI_ASSOC);

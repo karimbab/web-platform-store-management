@@ -9,7 +9,7 @@ echo "
             <h6>We strictly recommed you to read admin guidelines.</h6>
         </div>
         <hr>
-        <form action='./api/admin-manage.php' method='POST'>
+        <form action='./apis/admin-manage.php' method='POST'>
 ";
 
 if ($requested_sub_query == "Add") {
@@ -25,7 +25,7 @@ if ($requested_sub_query == "Add") {
         </div>
         <div class='d-flex'>
             <button type='submit' class='btn btn-info w-50 mr-2' name='add_category'>Add category</button>
-            <a href='../admin-manage.php?query=categories&sub_query=update&edit_access=0' class='btn btn-info w-50 ml-2'>Update category</a>
+            <a href='./admin_manage.php?query=categories&sub_query=update&edit_access=0' class='btn btn-info w-50 ml-2'>Update category</a>
         </div>
     ";
 }
